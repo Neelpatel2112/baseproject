@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="55" id="KGk-i7-Jjw" customClass="MenuTableViewCell" customModule="Dilango_Rider" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BMR-Hs-7Be">
+                        <rect key="frame" x="33" y="12.333333333333334" width="30" height="30.333333333333329"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="BMR-Hs-7Be" secondAttribute="height" multiplier="1:1" id="Ay0-Fx-B56"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqQ-M9-2vs">
+                        <rect key="frame" x="83" y="17" width="273" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BMR-Hs-7Be" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="30:375" id="STt-f1-OTH"/>
+                    <constraint firstItem="BMR-Hs-7Be" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="33" id="TaJ-Uu-7oD"/>
+                    <constraint firstItem="BMR-Hs-7Be" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="W6c-3E-fG2"/>
+                    <constraint firstItem="DqQ-M9-2vs" firstAttribute="centerY" secondItem="BMR-Hs-7Be" secondAttribute="centerY" id="fcr-3k-yXX"/>
+                    <constraint firstItem="DqQ-M9-2vs" firstAttribute="leading" secondItem="BMR-Hs-7Be" secondAttribute="trailing" constant="20" id="li7-77-kCS"/>
+                    <constraint firstAttribute="trailing" secondItem="DqQ-M9-2vs" secondAttribute="trailing" constant="20" id="rgg-7W-2N5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="img" destination="BMR-Hs-7Be" id="TA1-sM-hV6"/>
+                <outlet property="lblTitle" destination="DqQ-M9-2vs" id="RMu-sv-cGI"/>
+            </connections>
+            <point key="canvasLocation" x="175.38461538461539" y="89.218009478672982"/>
+        </tableViewCell>
+    </objects>
+</document>
